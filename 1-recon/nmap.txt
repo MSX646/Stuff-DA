@@ -1,0 +1,106 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2023-03-17 15:59 EDT
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 15:59
+Completed NSE at 15:59, 0.00s elapsed
+Initiating NSE at 15:59
+Completed NSE at 15:59, 0.00s elapsed
+Initiating NSE at 15:59
+Completed NSE at 15:59, 0.00s elapsed
+Initiating Ping Scan at 15:59
+Scanning 45.131.97.54 [2 ports]
+Completed Ping Scan at 15:59, 0.03s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:59
+Completed Parallel DNS resolution of 1 host. at 15:59, 0.57s elapsed
+Initiating Connect Scan at 15:59
+Scanning empreende21.nobrasil.us (45.131.97.54) [65535 ports]
+Discovered open port 22/tcp on 45.131.97.54
+Discovered open port 443/tcp on 45.131.97.54
+Connect Scan Timing: About 17.44% done; ETC: 16:02 (0:02:27 remaining)
+Discovered open port 4511/tcp on 45.131.97.54
+Connect Scan Timing: About 35.56% done; ETC: 16:02 (0:01:51 remaining)
+Connect Scan Timing: About 50.95% done; ETC: 16:02 (0:01:28 remaining)
+Connect Scan Timing: About 67.45% done; ETC: 16:02 (0:00:58 remaining)
+Discovered open port 1337/tcp on 45.131.97.54
+Completed Connect Scan at 16:02, 172.83s elapsed (65535 total ports)
+Initiating Service scan at 16:02
+Scanning 4 services on empreende21.nobrasil.us (45.131.97.54)
+Completed Service scan at 16:02, 12.20s elapsed (4 services on 1 host)
+NSE: Script scanning 45.131.97.54.
+Initiating NSE at 16:02
+Completed NSE at 16:02, 1.62s elapsed
+Initiating NSE at 16:02
+Completed NSE at 16:02, 0.37s elapsed
+Initiating NSE at 16:02
+Completed NSE at 16:02, 0.00s elapsed
+Nmap scan report for empreende21.nobrasil.us (45.131.97.54)
+Host is up (0.042s latency).
+Not shown: 65531 filtered tcp ports (no-response)
+PORT     STATE SERVICE  VERSION
+22/tcp   open  ssh      OpenSSH 8.2p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 f3:78:f9:71:91:59:87:15:bd:3a:dd:15:da:df:83:34 (RSA)
+|   256 38:b6:c7:ea:c3:12:66:b2:70:84:56:68:3e:93:71:bb (ECDSA)
+|_  256 4f:7c:48:e7:8d:46:9b:ba:84:85:f6:44:9f:3a:f2:0c (ED25519)
+443/tcp  open  ssl/http nginx 1.23.3
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+|_http-title: 404 Not Found
+| ssl-cert: Subject: commonName=intern.deteact.local/organizationName=Alros/stateOrProvinceName=London/countryName=GB
+| Issuer: commonName=intern.deteact.local/organizationName=Alros/stateOrProvinceName=London/countryName=GB
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-03-17T12:04:00
+| Not valid after:  2024-03-16T12:04:00
+| MD5:   6555 a342 c7fb 20b5 f1a8 977a 3ac7 1c44
+|_SHA-1: d202 4abf d4cd 2e3a 925d 3cba 433c a7ae d0e1 4acb
+|_ssl-date: TLS randomness does not represent time
+|_http-server-header: nginx/1.23.3
+| tls-alpn: 
+|   h2
+|   http/1.1
+|   http/1.0
+|_  http/0.9
+1337/tcp open  http     nginx 1.23.3
+| http-git: 
+|   45.131.97.54:1337/.git/
+|     Git repository found!
+|     .git/COMMIT_EDITMSG matched patterns 'user'
+|     Repository description: Unnamed repository; edit this file 'description' to name the...
+|_    Last commit message: Make error handling more user-friendly 
+| http-methods: 
+|_  Supported Methods: OPTIONS GET HEAD
+|_http-title: Welcome!
+|_http-server-header: nginx/1.23.3
+4511/tcp open  ssl/http nginx 1.23.3
+| http-methods: 
+|_  Supported Methods: POST GET OPTIONS HEAD
+|_http-title: Home
+| ssl-cert: Subject: commonName=vega.hello.local/organizationName=Alros/stateOrProvinceName=London/countryName=GB
+| Issuer: commonName=vega.hello.local/organizationName=Alros/stateOrProvinceName=London/countryName=GB
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-03-17T12:04:00
+| Not valid after:  2024-03-16T12:04:00
+| MD5:   3a38 ab81 1875 9f0a 7041 7e1a 4619 1c3a
+|_SHA-1: de8a 3fe3 390e 5247 8b67 81d9 0f5d dfb3 f8e3 7e5c
+| tls-alpn: 
+|   http/1.1
+|   http/1.0
+|_  http/0.9
+|_ssl-date: TLS randomness does not represent time
+|_http-server-header: nginx/1.23.3
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+Initiating NSE at 16:02
+Completed NSE at 16:02, 0.00s elapsed
+Initiating NSE at 16:02
+Completed NSE at 16:02, 0.00s elapsed
+Initiating NSE at 16:02
+Completed NSE at 16:02, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 190.37 seconds

@@ -1,0 +1,3 @@
+hidden git directory
+dump it -> extract it -> find flag.txt
+Top secret development: deteact{fc9403e6e7f917e5bac324c92cc5d5bb}

