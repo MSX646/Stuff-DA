@@ -1,0 +1,40 @@
+Nmap scan report for 10.200.22.2
+Host is up (0.0016s latency).
+Not shown: 65531 closed ports
+PORT      STATE SERVICE    VERSION
+1099/tcp  open  java-rmi   Java RMI
+| rmi-dumpregistry: 
+|   refObj
+|      implements java.rmi.Remote, ICalc, 
+|     extends
+|       java.lang.reflect.Proxy
+|       fields
+|           Ljava/lang/reflect/InvocationHandler; h
+|             java.rmi.server.RemoteObjectInvocationHandler
+|             @0.0.0.0:64000
+|             extends
+|_              java.rmi.server.RemoteObject
+9010/tcp  open  java-rmi   Java RMI
+| rmi-dumpregistry: 
+|   jmxrmi
+|      implements javax.management.remote.rmi.RMIServer, 
+|     extends
+|       java.lang.reflect.Proxy
+|       fields
+|           Ljava/lang/reflect/InvocationHandler; h
+|             java.rmi.server.RemoteObjectInvocationHandler
+|             @0.0.0.0:9010
+|             extends
+|_              java.rmi.server.RemoteObject
+44529/tcp open  tcpwrapped
+64000/tcp open  java-rmi   Java RMI
+
+Nmap scan report for 10.200.22.3
+Host is up (0.00041s latency).
+Not shown: 65533 closed ports
+PORT     STATE SERVICE VERSION
+80/tcp   open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title: PetLover - Pet Care Website
+3000/tcp open  http    Node.js (Express middleware)
+|_http-title: Node.js in the Cloud
