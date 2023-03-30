@@ -1,0 +1,1 @@
+upload TonkaBean to MBeanServer -> beanshooter tonka shell 10.200.22.2 9010
