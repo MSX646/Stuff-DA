@@ -1,0 +1,26 @@
+Nmap scan report for 10.18.223.1
+Host is up, received user-set (0.00053s latency).
+Scanned at 2023-04-11 22:43:03 GMT for 0s
+Not shown: 997 closed ports
+Reason: 997 conn-refused
+PORT     STATE SERVICE REASON
+22/tcp   open  ssh     syn-ack
+80/tcp   open  http    syn-ack
+8222/tcp open  unknown syn-ack
+
+Nmap scan report for 10.18.223.2
+Host is up, received user-set (0.00042s latency).
+Scanned at 2023-04-11 22:43:03 GMT for 0s
+Not shown: 999 closed ports
+Reason: 999 conn-refused
+PORT   STATE SERVICE REASON
+80/tcp open  http    syn-ack
+
+Nmap scan report for 10.18.223.3
+Host is up, received user-set (0.00019s latency).
+Scanned at 2023-04-11 22:43:03 GMT for 0s
+Not shown: 998 closed ports
+Reason: 998 conn-refused
+PORT    STATE SERVICE      REASON
+139/tcp open  netbios-ssn  syn-ack
+445/tcp open  microsoft-ds syn-ack
